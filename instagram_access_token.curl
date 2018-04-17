@@ -1,0 +1,6 @@
+    curl -F 'client_id=f5d16f85bae245e5944c5cca455eac50' \
+    -F 'client_secret=f4771d9ca9984fc69537b856425ce599' \
+    -F 'grant_type=authorization_code' \
+    -F 'redirect_uri=https://negar.in' \
+    -F 'code=4d097059fc2f48cbac05f133bbe8596a' \
+    https://api.instagram.com/oauth/access_token

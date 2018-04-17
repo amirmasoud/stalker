@@ -1,0 +1,412 @@
+2017-11-17 07:06:17 [scrapy.core.scraper] ERROR: Spider error processing <GET https://twitter.com/i/search/typeahead.json?count=1&result_type=users&q=Brad%20Douglas%20Paisley> (referer: https://www.thefamouspeople.com/profiles/brad-douglas-paisley-913.php)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/root/stalker.py", line 75, in twitter
+    item["twitter"]["username"] = jsonresponse["users"][0]["screen_name"]
+IndexError: list index out of range
+2017-11-17 07:06:49 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.instagram.com/web/search/topsearch/?context=blended&query=Shahabuddin%20Nagari> (referer: https://www.thefamouspeople.com/profiles/shahabuddin-nagari-6046.php)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/root/stalker.py", line 60, in instagram
+    item["instagram"]["username"] = jsonresponse["users"][0]["user"]["username"]
+IndexError: list index out of range
+2017-11-17 07:06:54 [scrapy.core.scraper] ERROR: Spider error processing <GET https://twitter.com/i/search/typeahead.json?count=1&result_type=users&q=Kehlani%20Ashley%20Parrish> (referer: https://www.thefamouspeople.com/profiles/kehlani-ashley-parrish-32998.php)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/root/stalker.py", line 75, in twitter
+    item["twitter"]["username"] = jsonresponse["users"][0]["screen_name"]
+IndexError: list index out of range
+2017-11-17 07:07:11 [scrapy.core.scraper] ERROR: Spider error processing <GET https://twitter.com/i/search/typeahead.json?count=1&result_type=users&q=Ruben%20Rada> (referer: https://www.thefamouspeople.com/profiles/ruben-rada-5769.php)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/root/stalker.py", line 77, in twitter
+    timeline = self.client.request("https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=" + item["twitter"]["username"] + "&count=200")
+  File "/usr/local/lib/python2.7/dist-packages/application_only_auth/client.py", line 44, in request
+    raise ClientException
+ClientException
+2017-11-17 07:08:00 [scrapy.core.scraper] ERROR: Spider error processing <GET https://twitter.com/i/search/typeahead.json?count=1&result_type=users&q=Alma%20Gluck> (referer: https://www.thefamouspeople.com/profiles/alma-gluck-3259.php)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/root/stalker.py", line 75, in twitter
+    item["twitter"]["username"] = jsonresponse["users"][0]["screen_name"]
+IndexError: list index out of range
+2017-11-17 07:08:13 [scrapy.core.scraper] ERROR: Spider error processing <GET https://twitter.com/i/search/typeahead.json?count=1&result_type=users&q=Helen%20Carter> (referer: https://www.thefamouspeople.com/profiles/helen-carter-5402.php)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/root/stalker.py", line 77, in twitter
+    timeline = self.client.request("https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=" + item["twitter"]["username"] + "&count=200")
+  File "/usr/local/lib/python2.7/dist-packages/application_only_auth/client.py", line 44, in request
+    raise ClientException
+ClientException
+2017-11-17 07:09:06 [scrapy.core.scraper] ERROR: Spider error processing <GET https://twitter.com/i/search/typeahead.json?count=1&result_type=users&q=Anna%20Held> (referer: https://www.thefamouspeople.com/profiles/anna-held-4639.php)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/root/stalker.py", line 77, in twitter
+    timeline = self.client.request("https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=" + item["twitter"]["username"] + "&count=200")
+  File "/usr/local/lib/python2.7/dist-packages/application_only_auth/client.py", line 44, in request
+    raise ClientException
+ClientException
+2017-11-17 07:09:24 [scrapy.core.scraper] ERROR: Spider error processing <GET https://twitter.com/i/search/typeahead.json?count=1&result_type=users&q=Emina%20Jahovi%C4%87> (referer: https://www.thefamouspeople.com/profiles/emina-jahovi-5664.php)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/root/stalker.py", line 75, in twitter
+    item["twitter"]["username"] = jsonresponse["users"][0]["screen_name"]
+IndexError: list index out of range
+2017-11-17 07:10:29 [scrapy.core.scraper] ERROR: Spider error processing <GET https://twitter.com/i/search/typeahead.json?count=1&result_type=users&q=Lee%20Hoi-chuen> (referer: https://www.thefamouspeople.com/profiles/lee-hoi-chuen-13553.php)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/root/stalker.py", line 75, in twitter
+    item["twitter"]["username"] = jsonresponse["users"][0]["screen_name"]
+IndexError: list index out of range
+2017-11-17 07:11:42 [scrapy.core.scraper] ERROR: Spider error processing <GET https://twitter.com/i/search/typeahead.json?count=1&result_type=users&q=Nicholas%20Tse> (referer: https://www.thefamouspeople.com/profiles/nicholas-tse-10954.php)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/root/stalker.py", line 77, in twitter
+    timeline = self.client.request("https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=" + item["twitter"]["username"] + "&count=200")
+  File "/usr/local/lib/python2.7/dist-packages/application_only_auth/client.py", line 44, in request
+    raise ClientException
+ClientException
+2017-11-17 07:13:41 [scrapy.core.scraper] ERROR: Spider error processing <GET https://twitter.com/i/search/typeahead.json?count=1&result_type=users&q=Cab%20Calloway> (referer: https://www.thefamouspeople.com/profiles/cabell-calloway-iii-950.php)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/root/stalker.py", line 77, in twitter
+    timeline = self.client.request("https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=" + item["twitter"]["username"] + "&count=200")
+  File "/usr/local/lib/python2.7/dist-packages/application_only_auth/client.py", line 44, in request
+    raise ClientException
+ClientException
+2017-11-17 07:15:07 [scrapy.core.scraper] ERROR: Spider error processing <GET https://twitter.com/i/search/typeahead.json?count=1&result_type=users&q=Jane%20Wyman> (referer: https://www.thefamouspeople.com/profiles/jane-wyman-7554.php)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/root/stalker.py", line 75, in twitter
+    item["twitter"]["username"] = jsonresponse["users"][0]["screen_name"]
+IndexError: list index out of range
+2017-11-17 07:15:56 [scrapy.core.scraper] ERROR: Spider error processing <GET https://twitter.com/i/search/typeahead.json?count=1&result_type=users&q=Princess%20St%C3%A9phanie%20of%20Monaco> (referer: https://www.thefamouspeople.com/profiles/princess-stphanie-of-monaco-5529.php)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/root/stalker.py", line 75, in twitter
+    item["twitter"]["username"] = jsonresponse["users"][0]["screen_name"]
+IndexError: list index out of range
+2017-11-17 07:16:00 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.instagram.com/web/search/topsearch/?context=blended&query=Princess%20St%C3%A9phanie%20of%20Monaco> (referer: https://www.thefamouspeople.com/profiles/princess-stphanie-of-monaco-5529.php)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/root/stalker.py", line 60, in instagram
+    item["instagram"]["username"] = jsonresponse["users"][0]["user"]["username"]
+IndexError: list index out of range
+2017-11-17 07:16:09 [scrapy.core.scraper] ERROR: Spider error processing <GET https://twitter.com/i/search/typeahead.json?count=1&result_type=users&q=Tom%20Lehrer> (referer: https://www.thefamouspeople.com/profiles/tom-lehrer-3348.php)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/root/stalker.py", line 77, in twitter
+    timeline = self.client.request("https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=" + item["twitter"]["username"] + "&count=200")
+  File "/usr/local/lib/python2.7/dist-packages/application_only_auth/client.py", line 44, in request
+    raise ClientException
+ClientException
+2017-11-17 07:16:54 [scrapy.core.scraper] ERROR: Spider error processing <GET https://twitter.com/i/search/typeahead.json?count=1&result_type=users&q=Pat%20Benatar> (referer: https://www.thefamouspeople.com/profiles/pat-benatar-4040.php)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/root/stalker.py", line 75, in twitter
+    item["twitter"]["username"] = jsonresponse["users"][0]["screen_name"]
+IndexError: list index out of range
+2017-11-17 07:17:42 [scrapy.core.scraper] ERROR: Spider error processing <GET https://twitter.com/i/search/typeahead.json?count=1&result_type=users&q=Richard%20Wright%20(Musician)> (referer: https://www.thefamouspeople.com/profiles/richard-wright-musician-5259.php)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/root/stalker.py", line 75, in twitter
+    item["twitter"]["username"] = jsonresponse["users"][0]["screen_name"]
+IndexError: list index out of range
+2017-11-17 07:17:42 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.instagram.com/web/search/topsearch/?context=blended&query=Richard%20Wright%20(Musician)> (referer: https://www.thefamouspeople.com/profiles/richard-wright-musician-5259.php)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/root/stalker.py", line 60, in instagram
+    item["instagram"]["username"] = jsonresponse["users"][0]["user"]["username"]
+IndexError: list index out of range
+2017-11-17 07:18:47 [scrapy.core.scraper] ERROR: Spider error processing <GET https://twitter.com/i/search/typeahead.json?count=1&result_type=users&q=Josephine%20Baker> (referer: https://www.thefamouspeople.com/profiles/josephine-baker-4908.php)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/root/stalker.py", line 77, in twitter
+    timeline = self.client.request("https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=" + item["twitter"]["username"] + "&count=200")
+  File "/usr/local/lib/python2.7/dist-packages/application_only_auth/client.py", line 44, in request
+    raise ClientException
+ClientException
+2017-11-17 07:20:10 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.instagram.com/web/search/topsearch/?context=blended&query=Elijah%20Blue%20Allman> (referer: https://www.thefamouspeople.com/profiles/elijah-blue-allman-32809.php)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/root/stalker.py", line 60, in instagram
+    item["instagram"]["username"] = jsonresponse["users"][0]["user"]["username"]
+IndexError: list index out of range
+2017-11-17 07:20:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://twitter.com/i/search/typeahead.json?count=1&result_type=users&q=Luciano%20Pavarotti> (referer: https://www.thefamouspeople.com/profiles/luciano-pavarotti-3443.php)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/root/stalker.py", line 77, in twitter
+    timeline = self.client.request("https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=" + item["twitter"]["username"] + "&count=200")
+  File "/usr/local/lib/python2.7/dist-packages/application_only_auth/client.py", line 44, in request
+    raise ClientException
+ClientException
+2017-11-17 07:22:12 [scrapy.core.scraper] ERROR: Spider error processing <GET https://twitter.com/i/search/typeahead.json?count=1&result_type=users&q=Peter%20Cetera> (referer: https://www.thefamouspeople.com/profiles/peter-cetera-34209.php)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/root/stalker.py", line 77, in twitter
+    timeline = self.client.request("https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=" + item["twitter"]["username"] + "&count=200")
+  File "/usr/local/lib/python2.7/dist-packages/application_only_auth/client.py", line 44, in request
+    raise ClientException
+ClientException
+2017-11-17 07:22:55 [scrapy.core.scraper] ERROR: Spider error processing <GET https://twitter.com/i/search/typeahead.json?count=1&result_type=users&q=Frankie%20Valli> (referer: https://www.thefamouspeople.com/profiles/frankie-valli-6346.php)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/root/stalker.py", line 77, in twitter
+    timeline = self.client.request("https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=" + item["twitter"]["username"] + "&count=200")
+  File "/usr/local/lib/python2.7/dist-packages/application_only_auth/client.py", line 44, in request
+    raise ClientException
+ClientException
+2017-11-17 07:23:49 [scrapy.core.scraper] ERROR: Spider error processing <GET https://twitter.com/i/search/typeahead.json?count=1&result_type=users&q=Kim%20Bum> (referer: https://www.thefamouspeople.com/profiles/kim-bum-34552.php)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/root/stalker.py", line 77, in twitter
+    timeline = self.client.request("https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=" + item["twitter"]["username"] + "&count=200")
+  File "/usr/local/lib/python2.7/dist-packages/application_only_auth/client.py", line 44, in request
+    raise ClientException
+ClientException
+2017-11-17 07:23:54 [scrapy.core.scraper] ERROR: Spider error processing <GET https://twitter.com/i/search/typeahead.json?count=1&result_type=users&q=Liza%20Minnelli> (referer: https://www.thefamouspeople.com/profiles/liza-minnelli-5645.php)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/root/stalker.py", line 75, in twitter
+    item["twitter"]["username"] = jsonresponse["users"][0]["screen_name"]
+IndexError: list index out of range
+2017-11-17 07:29:32 [scrapy.core.scraper] ERROR: Spider error processing <GET https://twitter.com/i/search/typeahead.json?count=1&result_type=users&q=Willow%20Smith> (referer: https://www.thefamouspeople.com/profiles/willow-smith-12574.php)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/root/stalker.py", line 75, in twitter
+    item["twitter"]["username"] = jsonresponse["users"][0]["screen_name"]
+IndexError: list index out of range
